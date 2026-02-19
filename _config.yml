@@ -71,8 +71,8 @@ defaults:
       author_profile: true
       share: false
 
-# Share links (only Twitter and Bluesky)
-share_links:
+# Share links configuration
+share:
   - label: "Twitter"
     icon: "fab fa-twitter"
     url: "https://twitter.com/intent/tweet?text={title}&url={url}"
