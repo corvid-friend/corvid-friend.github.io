@@ -1,0 +1,11 @@
+---
+---
+
+@import "minimal-mistakes";
+
+// Override the theme's font variables
+$serif: "Noto Serif JP", "MS Mincho", "Shippori Mincho", "Hina Mincho", "SimSun", serif;
+
+html {
+  font-family: $serif;
+}
