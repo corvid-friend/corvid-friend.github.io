@@ -53,6 +53,44 @@ code, pre {
 }
 
 // ================================================
+// FIX SANS-SERIF ELEMENTS
+// ================================================
+
+/* Site title / blog name */
+.site-title, .masthead__title, .site-logo h1, .site-logo a {
+  font-family: $serif-stack !important;
+}
+
+/* Navigation menu items */
+.masthead__menu-item, .greedy-nav a, .nav__list a, .nav__items a,
+.site-nav a, .nav__item, .nav__links a {
+  font-family: $serif-stack !important;
+}
+
+/* Author/sidebar info */
+.author__name, .author__bio, .author__location, .author__urls li,
+.author__urls a, .author__content, .author__urls-wrapper button {
+  font-family: $serif-stack !important;
+}
+
+/* Category/tag lists */
+.page__meta, .page__meta a, .taxonomy__index, .taxonomy__index a,
+.archive__item-title, .archive__item-excerpt, .archive__item a {
+  font-family: $serif-stack !important;
+}
+
+/* Footer elements */
+.page__footer, .page__footer a, .page__footer-copyright,
+.page__footer .social-icons a {
+  font-family: $serif-stack !important;
+}
+
+/* Icons (keep them looking good with the font) */
+.fa, .fas, .far, .fab, .icon {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", $serif-stack !important;
+}
+
+// ================================================
 // PAPER BACKGROUND STYLES (using variables)
 // ================================================
 
