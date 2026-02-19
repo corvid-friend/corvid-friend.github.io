@@ -73,3 +73,13 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+# Font customization using theme variables
+font:
+  serif: true  # Enable serif mode globally
+  
+# Alternative: If the above doesn't work, try this:
+# minimal_mistakes_skin: "default"
+# google_fonts:
+#   - name: "Noto Serif JP"
+#     weights: "400,500,700"
