@@ -1,8 +1,8 @@
 # Site settings
-title: "Corvid Friend HQ"
+title: "Sailing Aboard the Pequod"
 email: your-email@example.com
 description: >- 
-  We're all sailing on the Pequod. 建設中。
+  We're all sailing on the 21st Century Pequod. 建設中。
 baseurl: ""
 url: "https://corvid-friend.github.io"
 twitter_username: ahabstanaccount
@@ -35,7 +35,7 @@ encoding: "utf-8"
 author:
   name: "Corvid Friend"
   avatar:
-  bio: "建設中。直すから後で見てください。"
+  bio: "Like a modern day Ishmael but not so well read. Interested in history, books, and other stuff too."
   location: "California"
   links:
     - label: "Twitter"
