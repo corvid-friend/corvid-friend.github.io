@@ -47,16 +47,3 @@
   }
 </style>
 
-<!-- Debug: Check share configuration -->
-<script>
-  console.log('Share links from config:', {{ site.share_links | jsonify }});
-  console.log('Share setting in posts:', {{ site.defaults | where: "type", "posts" | first | jsonify }});
-  
-  setTimeout(function() {
-    const shareSection = document.querySelector('.page__share');
-    if (shareSection) {
-      console.log('Share buttons found:', shareSection.querySelectorAll('a').length);
-      console.log('Button labels:', Array.from(shareSection.querySelectorAll('a')).map(a => a.textContent.trim()));
-    }
-  }, 2000);
-</script>
