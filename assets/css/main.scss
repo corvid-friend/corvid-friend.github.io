@@ -1,24 +1,152 @@
 ---
 ---
 
+// ================================================
+// COLOR VARIABLES - Change these to adjust your theme
+// ================================================
+
+// Paper background colors
+$paper-light: #f0e9dd;      // Main background - warm paper
+$paper-medium: #e8dccc;      // Slightly darker (code blocks, blockquotes)
+$paper-dark: #d4c5b2;        // Even darker (buttons, borders)
+$paper-darker: #b8a692;       // Darkest (borders, hover states)
+
+// Text colors
+$text-black: #000000;         // Main text - pure black
+$link-color: #2c3e50;         // Links - dark slate blue
+$link-hover: #1a2632;         // Links on hover - darker slate
+
+// Font stacks (already had these)
+$serif-stack: "Noto Serif JP", "MS Mincho", "Shippori Mincho", "Hina Mincho", "SimSun", serif;
+$mono-stack: "SF Mono", Monaco, Consolas, "Courier New", monospace;
+
+// ================================================
+// IMPORT THEME
+// ================================================
+
 @import "minimal-mistakes";
 
-// Set the base font
-body {
-  font-family: "Noto Serif JP", "MS Mincho", "Shippori Mincho", "Hina Mincho", "SimSun", serif !important;
+// ================================================
+// FONT STYLES (your existing font code)
+// ================================================
+
+// Override the theme's font variables
+$serif: $serif-stack;
+
+html {
+  font-family: $serif;
 }
 
-// Make all text content inherit
-h1, h2, h3, h4, h5, h6, 
-p, li, a, 
-.page__content, article, 
-blockquote, td, th, 
-figcaption, .archive__item, 
-.author__content, .page__meta {
+// Target body directly (override theme's body style)
+body {
+  font-family: $serif-stack !important;
+}
+
+// Make sure headings inherit the same font
+h1, h2, h3, h4, h5, h6, .page__content, article, p, li, a {
   font-family: inherit !important;
 }
 
 // Keep code blocks monospace
-code, pre, .highlight, .highlighter-rouge {
-  font-family: "SF Mono", Monaco, Consolas, "Courier New", monospace !important;
+code, pre {
+  font-family: $mono-stack !important;
+}
+
+// ================================================
+// PAPER BACKGROUND STYLES (using variables)
+// ================================================
+
+/* Paper background and black text */
+html, body, .page, .main, .archive, .page__content, article {
+  background-color: $paper-light !important;
+  color: $text-black !important;
+}
+
+/* Ensure all text elements use black */
+h1, h2, h3, h4, h5, h6, p, li, a, span, div, .page__title, .archive__item-title,
+.page__content p, .page__content li, .archive__item-excerpt, .comment__date {
+  color: $text-black !important;
+}
+
+/* Keep links distinguishable but still black-appropriate */
+a {
+  color: $link-color !important;
+  border-bottom: 1px dotted $link-color;
+}
+
+a:hover {
+  color: $link-hover !important;
+  border-bottom: 1px solid $link-hover;
+}
+
+/* Keep code blocks with appropriate contrast */
+pre, code, .highlight, .highlighter-rouge {
+  background-color: $paper-medium !important;
+  color: $text-black !important;
+  border: 1px solid $paper-dark !important;
+}
+
+/* Make sure the site footer blends nicely */
+.page__footer, .page__footer-copyright, .page__footer-fixed {
+  background-color: $paper-light !important;
+  color: $text-black !important;
+}
+
+/* Navigation styling to match */
+.masthead, .greedy-nav, .nav__list, .nav__items, .site-nav, .site-logo {
+  background-color: $paper-light !important;
+}
+
+/* Fix any theme elements that might have white backgrounds */
+.taxonomy__index, .archive__item, .card, .notice, .sidebar, .author__content,
+.author__urls, .page__sidebar, .page__share, .page__comments {
+  background-color: $paper-light !important;
+}
+
+/* Make sure buttons and form elements still look good */
+.btn, .btn--primary, .btn--success, .btn--warning, .btn--danger, .btn--info,
+.btn--light-outline, .btn--inverse {
+  background-color: $paper-dark !important;
+  color: $text-black !important;
+  border: 1px solid $paper-darker !important;
+}
+
+.btn:hover {
+  background-color: $paper-darker !important;
+}
+
+/* Keep blockquotes readable */
+blockquote {
+  background-color: $paper-medium !important;
+  border-left-color: $paper-darker !important;
+  color: $text-black !important;
+}
+
+/* Table styling */
+table, th, td {
+  background-color: $paper-light !important;
+  border-color: $paper-darker !important;
+  color: $text-black !important;
+}
+
+th {
+  background-color: $paper-medium !important;
+}
+
+/* Make form inputs match the aesthetic */
+input, textarea, select, .form-control {
+  background-color: lighten($paper-light, 3%) !important;
+  border-color: $paper-darker !important;
+  color: $text-black !important;
+}
+
+/* Pagination styling */
+.pagination, .pagination a, .pagination span {
+  background-color: $paper-light !important;
+  border-color: $paper-darker !important;
+  color: $text-black !important;
+}
+
+.pagination .current {
+  background-color: $paper-dark !important;
 }
