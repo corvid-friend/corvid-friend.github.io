@@ -1,41 +1,34 @@
 # Site settings
-title: "Sailing on the Pequod"  # This will appear in the browser tab and header
+title: "Sailing on the Pequod"
 email: your-email@example.com
 description: >- 
   建設中。直すから後で見てください。
-baseurl: "" # Leave empty for now
-url: "https://corvid-friend.github.io" # Replace with your actual URL
+baseurl: ""
+url: "https://corvid-friend.github.io"
 twitter_username: ahabstanaccount
-# github_username: your-github-username
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
-minimal_mistakes_skin: "contrast" # You can change this later (options: "default", "air", "aqua", "contrast", etc.)
-encoding: "utf-8" # This ensures Japanese characters display correctly
+minimal_mistakes_skin: "contrast"
+encoding: "utf-8"
 
 # Site Author
 author:
   name: "Corvid Friend"
-  avatar: # path to avatar image, like "/assets/images/bio-photo.jpg"
+  avatar:
   bio: "建設中。直すから後で見てください。"
   location: "California"
   links:
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter"  # or use "fab fa-fw fa-twitter"
-      url: "https://twitter.com/ahabstanaccount"  # Replace with your actual Twitter URL
-    # - label: "GitHub"  # Comment out or remove the GitHub link
-    #   icon: "fab fa-fw fa-github"
-    #   url: "https://github.com/yourusername"
+      icon: "fab fa-twitter"
+      url: "https://twitter.com/ahabstanaccount"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"  # Also update footer if you want
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/yourusername"
-    # - label: "GitHub"
-    #   icon: "fab fa-fw fa-github"
-    #   url: "https://github.com/yourusername"
+    - label: "Twitter"
+      icon: "fab fa-twitter"
+      url: "https://twitter.com/ahabstanaccount"
 
 # Plugins
 plugins:
@@ -61,7 +54,6 @@ paginate_path: /page:num/
 
 # Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -69,33 +61,25 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
       share: true
       related: true
-  # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
+      share: false
 
-# Font customization using theme variables
-font:
-  serif: true  # Enable serif mode globally
-
-# Share links configuration
+# Share links (only Twitter and Bluesky)
 share_links:
   - label: "Twitter"
-    icon: "fab fa-twitter"  # Classic bird
-    url: "https://x.com/intent/tweet?text={title}&url={url}"
+    icon: "fab fa-twitter"
+    url: "https://twitter.com/intent/tweet?text={title}&url={url}"
   - label: "Bluesky"
     icon: "fab fa-bluesky"
     url: "https://bsky.app/intent/compose?text={title} {url}"
-  # Facebook and LinkedIn are intentionally omitted
-  
-# Alternative: If the above doesn't work, try this:
-# minimal_mistakes_skin: "contrast"
-# google_fonts:
-#   - name: "Noto Serif JP"
-#     weights: "400,500,700"
+
+# Font settings
+font:
+  serif: true
