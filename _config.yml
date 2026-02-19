@@ -20,16 +20,22 @@ author:
   bio: "建設中。直すから後で見てください。"
   location: "California"
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/yourusername"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"  # or use "fab fa-fw fa-twitter"
+      url: "https://twitter.com/ahabstanaccount"  # Replace with your actual Twitter URL
+    # - label: "GitHub"  # Comment out or remove the GitHub link
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/yourusername"
 
 # Site Footer
 footer:
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/yourusername"
+    - label: "Twitter"  # Also update footer if you want
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/yourusername"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/yourusername"
 
 # Plugins
 plugins:
