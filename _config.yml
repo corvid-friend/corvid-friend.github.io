@@ -2,11 +2,11 @@
 title: "Sailing on the Pequod"  # This will appear in the browser tab and header
 email: your-email@example.com
 description: >- 
-  A simple blog about my interests and thoughts.
+  建設中。直すから後で見てください。
 baseurl: "" # Leave empty for now
 url: "https://corvid-friend.github.io" # Replace with your actual URL
-twitter_username: your-twitter-handle
-github_username: your-github-username
+twitter_username: ahabstanaccount
+# github_username: your-github-username
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
