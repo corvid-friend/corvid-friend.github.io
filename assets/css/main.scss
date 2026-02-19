@@ -188,3 +188,33 @@ input, textarea, select, .form-control {
 .pagination .current {
   background-color: $paper-dark !important;
 }
+
+// ================================================
+// SOCIAL ICON STYLING
+// ================================================
+
+/* Make all social icons black */
+.author__urls .fab, 
+.author__urls .fas,
+.author__urls .far,
+.page__share .fab,
+.page__share .fas,
+.page__share .far,
+.social-icons .fab,
+.social-icons .fas,
+.social-icons .far {
+  color: #000000 !important;
+}
+
+/* Hover effect (optional - slightly lighter black) */
+.author__urls .fab:hover,
+.author__urls .fas:hover,
+.author__urls .far:hover,
+.page__share .fab:hover,
+.page__share .fas:hover,
+.page__share .far:hover,
+.social-icons .fab:hover,
+.social-icons .fas:hover,
+.social-icons .far:hover {
+  color: #333333 !important;
+}
