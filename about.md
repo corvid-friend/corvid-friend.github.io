@@ -12,6 +12,7 @@ permalink: /about/
 
 * History
 * Economics
+* Japanese
 * Movies
 * Books
 * Video Games
