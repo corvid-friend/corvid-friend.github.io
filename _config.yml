@@ -17,7 +17,7 @@ encoding: "utf-8" # This ensures Japanese characters display correctly
 author:
   name: "Corvid Friend"
   avatar: # path to avatar image, like "/assets/images/bio-photo.jpg"
-  bio: "A short bio about yourself"
+  bio: "建設中。直すから後で見てください。"
   location: "California"
   links:
     - label: "GitHub"
