@@ -10,7 +10,7 @@ twitter_username: ahabstanaccount
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
-minimal_mistakes_skin: "default" # You can change this later (options: "default", "air", "aqua", "contrast", etc.)
+minimal_mistakes_skin: "contrast" # You can change this later (options: "default", "air", "aqua", "contrast", etc.)
 encoding: "utf-8" # This ensures Japanese characters display correctly
 
 # Site Author
@@ -79,7 +79,7 @@ font:
   serif: true  # Enable serif mode globally
   
 # Alternative: If the above doesn't work, try this:
-# minimal_mistakes_skin: "default"
+# minimal_mistakes_skin: "contrast"
 # google_fonts:
 #   - name: "Noto Serif JP"
 #     weights: "400,500,700"
