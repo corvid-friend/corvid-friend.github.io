@@ -83,6 +83,16 @@ defaults:
 # Font customization using theme variables
 font:
   serif: true  # Enable serif mode globally
+
+# Share links configuration
+share_links:
+  - label: "Twitter"
+    icon: "fab fa-twitter"  # Classic bird
+    url: "https://x.com/intent/tweet?text={title}&url={url}"
+  - label: "Bluesky"
+    icon: "fab fa-bluesky"
+    url: "https://bsky.app/intent/compose?text={title} {url}"
+  # Facebook and LinkedIn are intentionally omitted
   
 # Alternative: If the above doesn't work, try this:
 # minimal_mistakes_skin: "contrast"
