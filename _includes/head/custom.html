@@ -1,4 +1,12 @@
-<!-- Self-hosted Noto Serif JP -->
+<!-- ======================================== -->
+<!-- FONT AWESOME ICONS - Fix broken icons -->
+<!-- ======================================== -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- ======================================== -->
+<!-- NOTO SERIF JP FONTS (self-hosted) -->
+<!-- ======================================== -->
 <style>
   @font-face {
     font-family: 'Noto Serif JP';
@@ -23,9 +31,18 @@
     font-display: swap;
     src: url('/assets/fonts/NotoSerifJP-Bold.woff') format('woff');
   }
+</style>
+
+<!-- ======================================== -->
+<!-- FONT FALLBACK - In case CDN fails -->
+<!-- ======================================== -->
+<style>
+  /* Force icon fonts to use proper family */
+  .fa, .fas, .far, .fab, .fal, .fad, .fa-solid, .fa-regular, .fa-brands {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+  }
   
-  /* Apply the font */
-  body {
-    font-family: 'Noto Serif JP', 'MS Mincho', 'Shippori Mincho', 'Hina Mincho', 'SimSun', serif !important;
+  .fab, .fa-brands {
+    font-family: "Font Awesome 6 Brands" !important;
   }
 </style>
