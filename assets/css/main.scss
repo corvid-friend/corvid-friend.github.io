@@ -218,3 +218,19 @@ input, textarea, select, .form-control {
 .social-icons .far:hover {
   color: #333333 !important;
 }
+
+// ================================================
+// HIDE UNWANTED SHARE BUTTONS
+// ================================================
+
+/* Hide Facebook and LinkedIn share buttons */
+.page__share a[href*="facebook"],
+.page__share a[href*="linkedin"] {
+  display: none !important;
+}
+
+/* Keep only Twitter and Bluesky visible - this ensures they stay */
+.page__share a[href*="twitter"],
+.page__share a[href*="bsky"] {
+  display: inline-block !important;
+}
