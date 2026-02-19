@@ -7,6 +7,25 @@ baseurl: ""
 url: "https://corvid-friend.github.io"
 twitter_username: ahabstanaccount
 
+# Defaults - MOVED TO TOP
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      share: false
+
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 minimal_mistakes_skin: "contrast"
@@ -51,25 +70,6 @@ kramdown:
 # Pagination
 paginate: 5
 paginate_path: /page:num/
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      share: true
-      related: true
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      share: false
 
 # Share links configuration
 share_links:
