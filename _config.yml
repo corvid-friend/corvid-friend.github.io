@@ -1,13 +1,13 @@
 # Site settings
-title: "Sailing on the Pequod"
+title: "Corvid Friend HQ"
 email: your-email@example.com
 description: >- 
-  建設中。直すから後で見てください。
+  We're all sailing on the Pequod. 建設中。
 baseurl: ""
 url: "https://corvid-friend.github.io"
 twitter_username: ahabstanaccount
 
-# Defaults - MOVED TO TOP
+# Defaults
 defaults:
   - scope:
       path: ""
