@@ -1,0 +1,75 @@
+# Site settings
+title: "Sailing on the Pequod"  # This will appear in the browser tab and header
+email: your-email@example.com
+description: >- 
+  A simple blog about my interests and thoughts.
+baseurl: "" # Leave empty for now
+url: "https://corvid-friend.github.io" # Replace with your actual URL
+twitter_username: your-twitter-handle
+github_username: your-github-username
+
+# Build settings
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+minimal_mistakes_skin: "default" # You can change this later (options: "default", "air", "aqua", "contrast", etc.)
+encoding: "utf-8" # This ensures Japanese characters display correctly
+
+# Site Author
+author:
+  name: "Corvid Friend"
+  avatar: # path to avatar image, like "/assets/images/bio-photo.jpg"
+  bio: "A short bio about yourself"
+  location: "California"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yourusername"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yourusername"
+
+# Plugins
+plugins:
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+# Pagination
+paginate: 5
+paginate_path: /page:num/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
