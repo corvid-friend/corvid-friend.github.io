@@ -71,8 +71,8 @@ defaults:
       author_profile: true
       share: false
 
-# Share links configuration
-share:
+# Share links configuration - CHANGED FROM "share:" TO "share_links:"
+share_links:
   - label: "Twitter"
     icon: "fab fa-twitter"
     url: "https://twitter.com/intent/tweet?text={title}&url={url}"
