@@ -3,9 +3,22 @@
 
 @import "minimal-mistakes";
 
-// Override the theme's font variables
-$serif: "Noto Serif JP", "MS Mincho", "Shippori Mincho", "Hina Mincho", "SimSun", serif;
+// Set the base font
+body {
+  font-family: "Noto Serif JP", "MS Mincho", "Shippori Mincho", "Hina Mincho", "SimSun", serif !important;
+}
 
-html {
-  font-family: $serif;
+// Make all text content inherit
+h1, h2, h3, h4, h5, h6, 
+p, li, a, 
+.page__content, article, 
+blockquote, td, th, 
+figcaption, .archive__item, 
+.author__content, .page__meta {
+  font-family: inherit !important;
+}
+
+// Keep code blocks monospace
+code, pre, .highlight, .highlighter-rouge {
+  font-family: "SF Mono", Monaco, Consolas, "Courier New", monospace !important;
 }
