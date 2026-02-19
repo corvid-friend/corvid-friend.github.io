@@ -1,0 +1,59 @@
+<!-- Font Debug Tool -->
+<div style="position: fixed; bottom: 10px; right: 10px; background: yellow; padding: 10px; z-index: 9999; font-size: 14px; border: 1px solid black; max-width: 300px;" id="font-debug">
+  🔍 Font debugger loading...
+</div>
+
+<script>
+  function getActualFont(element) {
+    element.offsetHeight; // Force reflow
+    return window.getComputedStyle(element).fontFamily;
+  }
+
+  setTimeout(function() {
+    const debugDiv = document.getElementById('font-debug');
+    const bodyFont = getActualFont(document.body);
+    const sampleElement = document.querySelector('p') || document.body;
+    const sampleFont = getActualFont(sampleElement);
+    
+    // Test if Noto Serif JP is available
+    const testElement = document.createElement('span');
+    testElement.style.fontFamily = '"Noto Serif JP", monospace';
+    testElement.style.position = 'absolute';
+    testElement.style.left = '-9999px';
+    testElement.textContent = '直';
+    document.body.appendChild(testElement);
+    
+    const testWidth = testElement.offsetWidth;
+    document.body.removeChild(testElement);
+    
+    // Compare with monospace
+    const monoElement = document.createElement('span');
+    monoElement.style.fontFamily = 'monospace';
+    monoElement.style.position = 'absolute';
+    monoElement.style.left = '-9999px';
+    monoElement.textContent = '直';
+    document.body.appendChild(monoElement);
+    
+    const monoWidth = monoElement.offsetWidth;
+    document.body.removeChild(monoElement);
+    
+    const isNotoLoaded = Math.abs(testWidth - monoWidth) > 2;
+    
+    // List all fonts on the page
+    const allElements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, li, a');
+    let fontsUsed = new Set();
+    allElements.forEach(el => {
+      fontsUsed.add(window.getComputedStyle(el).fontFamily.split(',')[0].replace(/['"]/g, ''));
+    });
+    
+    debugDiv.innerHTML = `
+      <strong>🔍 Font Debug Info:</strong><br>
+      <hr style="margin: 5px 0;">
+      Body font: ${bodyFont.substring(0, 40)}...<br>
+      Sample font: ${sampleFont.substring(0, 40)}...<br>
+      Noto loaded: ${isNotoLoaded ? '✅ YES' : '❌ NO'}<br>
+      Active fonts: ${Array.from(fontsUsed).join(', ')}<br>
+      Test char: 直
+    `;
+  }, 2000);
+</script>
